@@ -42,17 +42,17 @@ message ConversationReq{
   int32 conversationType = 2;
   string userID = 3;
   string groupID = 4;
-  OpenIMServer.protobuf.Int32Value recvMsgOpt = 5;
-  OpenIMServer.protobuf.BoolValue isPinned = 6;
-  OpenIMServer.protobuf.StringValue attachedInfo = 7;
-  OpenIMServer.protobuf.BoolValue isPrivateChat = 8;
-  OpenIMServer.protobuf.StringValue ex = 9;
-  OpenIMServer.protobuf.Int32Value burnDuration = 10;
+  openim.protobuf.Int32Value recvMsgOpt = 5;
+  openim.protobuf.BoolValue isPinned = 6;
+  openim.protobuf.StringValue attachedInfo = 7;
+  openim.protobuf.BoolValue isPrivateChat = 8;
+  openim.protobuf.StringValue ex = 9;
+  openim.protobuf.Int32Value burnDuration = 10;
   OpenIMServer.protobuf.Int64Value minSeq = 11;
   OpenIMServer.protobuf.Int64Value maxSeq = 12;
-  OpenIMServer.protobuf.Int32Value groupAtType = 13;
+  openim.protobuf.Int32Value groupAtType = 13;
   OpenIMServer.protobuf.Int64Value msgDestructTime = 14;
-  OpenIMServer.protobuf.BoolValue isMsgDestruct = 15;
+  openim.protobuf.BoolValue isMsgDestruct = 15;
 }
 
 message SetConversationReq{

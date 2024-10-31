@@ -45,10 +45,10 @@ message GroupInfoForSet{
   string notification = 3;
   string introduction = 4;
   string faceURL = 5;
-  OpenIMServer.protobuf.StringValue ex = 6;
-  OpenIMServer.protobuf.Int32Value needVerification = 7;
-  OpenIMServer.protobuf.Int32Value lookMemberInfo = 8;
-  OpenIMServer.protobuf.Int32Value applyMemberFriend = 9;
+  openim.protobuf.StringValue ex = 6;
+  openim.protobuf.Int32Value needVerification = 7;
+  openim.protobuf.Int32Value lookMemberInfo = 8;
+  openim.protobuf.Int32Value applyMemberFriend = 9;
 }
 
 
@@ -88,7 +88,7 @@ message UserInfoWithEx{
   string userID = 1;
   string nickname = 2;
   string faceURL = 3;
-  OpenIMServer.protobuf.StringValue ex = 4;
+  openim.protobuf.StringValue ex = 4;
   int32 globalRecvMsgOpt = 7;
 }
 

@@ -263,10 +263,10 @@ message GetSuperGroupsInfoResp {
 message SetGroupMemberInfo{
   string groupID = 1;
   string userID = 2;
-  OpenIMServer.protobuf.StringValue nickname = 3;
-  OpenIMServer.protobuf.StringValue faceURL = 4;
-  OpenIMServer.protobuf.Int32Value roleLevel = 5;
-  OpenIMServer.protobuf.StringValue ex = 6;
+  openim.protobuf.StringValue nickname = 3;
+  openim.protobuf.StringValue faceURL = 4;
+  openim.protobuf.Int32Value roleLevel = 5;
+  openim.protobuf.StringValue ex = 6;
 }
 
 message SetGroupMemberInfoReq{

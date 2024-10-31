@@ -22,7 +22,7 @@ package conversation
 
 import (
 	context "context"
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -2019,23 +2019,23 @@ var file_conversation_conversation_proto_goTypes = []interface{}{
 	(*GetConversationsByConversationIDResp)(nil),  // 25: OpenIMServer.conversation.GetConversationsByConversationIDResp
 	(*GetConversationOfflinePushUserIDsReq)(nil),  // 26: OpenIMServer.conversation.GetConversationOfflinePushUserIDsReq
 	(*GetConversationOfflinePushUserIDsResp)(nil), // 27: OpenIMServer.conversation.GetConversationOfflinePushUserIDsResp
-	(*wrapperspb.Int32Value)(nil),                 // 28: OpenIMServer.protobuf.Int32Value
-	(*wrapperspb.BoolValue)(nil),                  // 29: OpenIMServer.protobuf.BoolValue
-	(*wrapperspb.StringValue)(nil),                // 30: OpenIMServer.protobuf.StringValue
+	(*wrapperspb.Int32Value)(nil),                 // 28: openim.protobuf.Int32Value
+	(*wrapperspb.BoolValue)(nil),                  // 29: openim.protobuf.BoolValue
+	(*wrapperspb.StringValue)(nil),                // 30: openim.protobuf.StringValue
 	(*wrapperspb.Int64Value)(nil),                 // 31: OpenIMServer.protobuf.Int64Value
 }
 var file_conversation_conversation_proto_depIdxs = []int32{
-	28, // 0: OpenIMServer.conversation.ConversationReq.recvMsgOpt:type_name -> OpenIMServer.protobuf.Int32Value
-	29, // 1: OpenIMServer.conversation.ConversationReq.isPinned:type_name -> OpenIMServer.protobuf.BoolValue
-	30, // 2: OpenIMServer.conversation.ConversationReq.attachedInfo:type_name -> OpenIMServer.protobuf.StringValue
-	29, // 3: OpenIMServer.conversation.ConversationReq.isPrivateChat:type_name -> OpenIMServer.protobuf.BoolValue
-	30, // 4: OpenIMServer.conversation.ConversationReq.ex:type_name -> OpenIMServer.protobuf.StringValue
-	28, // 5: OpenIMServer.conversation.ConversationReq.burnDuration:type_name -> OpenIMServer.protobuf.Int32Value
+	28, // 0: OpenIMServer.conversation.ConversationReq.recvMsgOpt:type_name -> openim.protobuf.Int32Value
+	29, // 1: OpenIMServer.conversation.ConversationReq.isPinned:type_name -> openim.protobuf.BoolValue
+	30, // 2: OpenIMServer.conversation.ConversationReq.attachedInfo:type_name -> openim.protobuf.StringValue
+	29, // 3: OpenIMServer.conversation.ConversationReq.isPrivateChat:type_name -> openim.protobuf.BoolValue
+	30, // 4: OpenIMServer.conversation.ConversationReq.ex:type_name -> openim.protobuf.StringValue
+	28, // 5: OpenIMServer.conversation.ConversationReq.burnDuration:type_name -> openim.protobuf.Int32Value
 	31, // 6: OpenIMServer.conversation.ConversationReq.minSeq:type_name -> OpenIMServer.protobuf.Int64Value
 	31, // 7: OpenIMServer.conversation.ConversationReq.maxSeq:type_name -> OpenIMServer.protobuf.Int64Value
-	28, // 8: OpenIMServer.conversation.ConversationReq.groupAtType:type_name -> OpenIMServer.protobuf.Int32Value
+	28, // 8: OpenIMServer.conversation.ConversationReq.groupAtType:type_name -> openim.protobuf.Int32Value
 	31, // 9: OpenIMServer.conversation.ConversationReq.msgDestructTime:type_name -> OpenIMServer.protobuf.Int64Value
-	29, // 10: OpenIMServer.conversation.ConversationReq.isMsgDestruct:type_name -> OpenIMServer.protobuf.BoolValue
+	29, // 10: OpenIMServer.conversation.ConversationReq.isMsgDestruct:type_name -> openim.protobuf.BoolValue
 	0,  // 11: OpenIMServer.conversation.SetConversationReq.conversation:type_name -> OpenIMServer.conversation.Conversation
 	0,  // 12: OpenIMServer.conversation.GetConversationResp.conversation:type_name -> OpenIMServer.conversation.Conversation
 	0,  // 13: OpenIMServer.conversation.GetConversationsResp.conversations:type_name -> OpenIMServer.conversation.Conversation

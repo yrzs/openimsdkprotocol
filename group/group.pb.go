@@ -23,7 +23,7 @@ package group
 import (
 	context "context"
 	sdkws "github.com/yrzs/openimsdkprotocol/sdkws"
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -4466,8 +4466,8 @@ var file_group_group_proto_goTypes = []interface{}{
 	(*sdkws.RequestPagination)(nil),             // 75: OpenIMServer.sdkws.RequestPagination
 	(*sdkws.GroupRequest)(nil),                  // 76: OpenIMServer.sdkws.GroupRequest
 	(*sdkws.GroupMemberFullInfo)(nil),           // 77: OpenIMServer.sdkws.GroupMemberFullInfo
-	(*wrapperspb.StringValue)(nil),              // 78: OpenIMServer.protobuf.StringValue
-	(*wrapperspb.Int32Value)(nil),               // 79: OpenIMServer.protobuf.Int32Value
+	(*wrapperspb.StringValue)(nil),              // 78: openim.protobuf.StringValue
+	(*wrapperspb.Int32Value)(nil),               // 79: openim.protobuf.Int32Value
 }
 var file_group_group_proto_depIdxs = []int32{
 	73, // 0: OpenIMServer.group.CreateGroupReq.groupInfo:type_name -> OpenIMServer.sdkws.GroupInfo
@@ -4492,10 +4492,10 @@ var file_group_group_proto_depIdxs = []int32{
 	77, // 19: OpenIMServer.group.GetGroupMembersCMSResp.members:type_name -> OpenIMServer.sdkws.GroupMemberFullInfo
 	73, // 20: OpenIMServer.group.GetJoinedSuperGroupListResp.groups:type_name -> OpenIMServer.sdkws.GroupInfo
 	73, // 21: OpenIMServer.group.GetSuperGroupsInfoResp.groupInfos:type_name -> OpenIMServer.sdkws.GroupInfo
-	78, // 22: OpenIMServer.group.SetGroupMemberInfo.nickname:type_name -> OpenIMServer.protobuf.StringValue
-	78, // 23: OpenIMServer.group.SetGroupMemberInfo.faceURL:type_name -> OpenIMServer.protobuf.StringValue
-	79, // 24: OpenIMServer.group.SetGroupMemberInfo.roleLevel:type_name -> OpenIMServer.protobuf.Int32Value
-	78, // 25: OpenIMServer.group.SetGroupMemberInfo.ex:type_name -> OpenIMServer.protobuf.StringValue
+	78, // 22: OpenIMServer.group.SetGroupMemberInfo.nickname:type_name -> openim.protobuf.StringValue
+	78, // 23: OpenIMServer.group.SetGroupMemberInfo.faceURL:type_name -> openim.protobuf.StringValue
+	79, // 24: OpenIMServer.group.SetGroupMemberInfo.roleLevel:type_name -> openim.protobuf.Int32Value
+	78, // 25: OpenIMServer.group.SetGroupMemberInfo.ex:type_name -> openim.protobuf.StringValue
 	50, // 26: OpenIMServer.group.SetGroupMemberInfoReq.members:type_name -> OpenIMServer.group.SetGroupMemberInfo
 	54, // 27: OpenIMServer.group.GetGroupAbstractInfoResp.groupAbstractInfos:type_name -> OpenIMServer.group.GroupAbstractInfo
 	77, // 28: OpenIMServer.group.GetUserInGroupMembersResp.members:type_name -> OpenIMServer.sdkws.GroupMemberFullInfo

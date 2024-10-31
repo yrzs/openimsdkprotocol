@@ -23,7 +23,7 @@ package friend
 import (
 	context "context"
 	sdkws "github.com/yrzs/openimsdkprotocol/sdkws"
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -2382,8 +2382,8 @@ var file_friend_friend_proto_goTypes = []interface{}{
 	(*sdkws.FriendInfo)(nil),                  // 38: OpenIMServer.sdkws.FriendInfo
 	(*sdkws.FriendRequest)(nil),               // 39: OpenIMServer.sdkws.FriendRequest
 	(*sdkws.BlackInfo)(nil),                   // 40: OpenIMServer.sdkws.BlackInfo
-	(*wrapperspb.BoolValue)(nil),              // 41: OpenIMServer.protobuf.BoolValue
-	(*wrapperspb.StringValue)(nil),            // 42: OpenIMServer.protobuf.StringValue
+	(*wrapperspb.BoolValue)(nil),              // 41: openim.protobuf.BoolValue
+	(*wrapperspb.StringValue)(nil),            // 42: openim.protobuf.StringValue
 	(*sdkws.UserInfo)(nil),                    // 43: OpenIMServer.sdkws.UserInfo
 }
 var file_friend_friend_proto_depIdxs = []int32{
@@ -2395,9 +2395,9 @@ var file_friend_friend_proto_depIdxs = []int32{
 	38, // 5: OpenIMServer.friend.getDesignatedFriendsResp.friendsInfo:type_name -> OpenIMServer.sdkws.FriendInfo
 	37, // 6: OpenIMServer.friend.getPaginationBlacksReq.pagination:type_name -> OpenIMServer.sdkws.RequestPagination
 	40, // 7: OpenIMServer.friend.getPaginationBlacksResp.blacks:type_name -> OpenIMServer.sdkws.BlackInfo
-	41, // 8: OpenIMServer.friend.updateFriendsReq.isPinned:type_name -> OpenIMServer.protobuf.BoolValue
-	42, // 9: OpenIMServer.friend.updateFriendsReq.remark:type_name -> OpenIMServer.protobuf.StringValue
-	42, // 10: OpenIMServer.friend.updateFriendsReq.ex:type_name -> OpenIMServer.protobuf.StringValue
+	41, // 8: OpenIMServer.friend.updateFriendsReq.isPinned:type_name -> openim.protobuf.BoolValue
+	42, // 9: OpenIMServer.friend.updateFriendsReq.remark:type_name -> openim.protobuf.StringValue
+	42, // 10: OpenIMServer.friend.updateFriendsReq.ex:type_name -> openim.protobuf.StringValue
 	37, // 11: OpenIMServer.friend.getPaginationFriendsApplyFromReq.pagination:type_name -> OpenIMServer.sdkws.RequestPagination
 	39, // 12: OpenIMServer.friend.getPaginationFriendsApplyFromResp.friendRequests:type_name -> OpenIMServer.sdkws.FriendRequest
 	43, // 13: OpenIMServer.friend.getSpecifiedFriendsInfoInfo.userInfo:type_name -> OpenIMServer.sdkws.UserInfo

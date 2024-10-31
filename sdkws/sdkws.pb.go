@@ -21,7 +21,7 @@
 package sdkws
 
 import (
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -5897,15 +5897,15 @@ var file_sdkws_sdkws_proto_goTypes = []interface{}{
 	nil,                                   // 72: OpenIMServer.sdkws.MsgData.OptionsEntry
 	nil,                                   // 73: OpenIMServer.sdkws.PushMessages.MsgsEntry
 	nil,                                   // 74: OpenIMServer.sdkws.PushMessages.NotificationMsgsEntry
-	(*wrapperspb.StringValue)(nil),        // 75: OpenIMServer.protobuf.StringValue
-	(*wrapperspb.Int32Value)(nil),         // 76: OpenIMServer.protobuf.Int32Value
+	(*wrapperspb.StringValue)(nil),        // 75: openim.protobuf.StringValue
+	(*wrapperspb.Int32Value)(nil),         // 76: openim.protobuf.Int32Value
 }
 var file_sdkws_sdkws_proto_depIdxs = []int32{
-	75, // 0: OpenIMServer.sdkws.GroupInfoForSet.ex:type_name -> OpenIMServer.protobuf.StringValue
-	76, // 1: OpenIMServer.sdkws.GroupInfoForSet.needVerification:type_name -> OpenIMServer.protobuf.Int32Value
-	76, // 2: OpenIMServer.sdkws.GroupInfoForSet.lookMemberInfo:type_name -> OpenIMServer.protobuf.Int32Value
-	76, // 3: OpenIMServer.sdkws.GroupInfoForSet.applyMemberFriend:type_name -> OpenIMServer.protobuf.Int32Value
-	75, // 4: OpenIMServer.sdkws.UserInfoWithEx.ex:type_name -> OpenIMServer.protobuf.StringValue
+	75, // 0: OpenIMServer.sdkws.GroupInfoForSet.ex:type_name -> openim.protobuf.StringValue
+	76, // 1: OpenIMServer.sdkws.GroupInfoForSet.needVerification:type_name -> openim.protobuf.Int32Value
+	76, // 2: OpenIMServer.sdkws.GroupInfoForSet.lookMemberInfo:type_name -> openim.protobuf.Int32Value
+	76, // 3: OpenIMServer.sdkws.GroupInfoForSet.applyMemberFriend:type_name -> openim.protobuf.Int32Value
+	75, // 4: OpenIMServer.sdkws.UserInfoWithEx.ex:type_name -> openim.protobuf.StringValue
 	5,  // 5: OpenIMServer.sdkws.FriendInfo.friendUser:type_name -> OpenIMServer.sdkws.UserInfo
 	4,  // 6: OpenIMServer.sdkws.BlackInfo.blackUserInfo:type_name -> OpenIMServer.sdkws.PublicUserInfo
 	4,  // 7: OpenIMServer.sdkws.GroupRequest.userInfo:type_name -> OpenIMServer.sdkws.PublicUserInfo
