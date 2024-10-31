@@ -23,7 +23,7 @@ package friend
 import (
 	context "context"
 	sdkws "github.com/yrzs/openimsdkprotocol/sdkws"
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspbv1 "github.com/yrzs/openimsdkprotocol/wrapperspbv1"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -1400,9 +1400,9 @@ type UpdateFriendsReq struct {
 
 	OwnerUserID   string                  `protobuf:"bytes,1,opt,name=ownerUserID,proto3" json:"ownerUserID"`
 	FriendUserIDs []string                `protobuf:"bytes,2,rep,name=friendUserIDs,proto3" json:"friendUserIDs"`
-	IsPinned      *wrapperspb.BoolValue   `protobuf:"bytes,3,opt,name=isPinned,proto3" json:"isPinned"`
-	Remark        *wrapperspb.StringValue `protobuf:"bytes,4,opt,name=remark,proto3" json:"remark"`
-	Ex            *wrapperspb.StringValue `protobuf:"bytes,5,opt,name=ex,proto3" json:"ex"`
+	IsPinned      *wrapperspbv1.BoolValue   `protobuf:"bytes,3,opt,name=isPinned,proto3" json:"isPinned"`
+	Remark        *wrapperspbv1.StringValue `protobuf:"bytes,4,opt,name=remark,proto3" json:"remark"`
+	Ex            *wrapperspbv1.StringValue `protobuf:"bytes,5,opt,name=ex,proto3" json:"ex"`
 }
 
 func (x *UpdateFriendsReq) Reset() {
@@ -1451,21 +1451,21 @@ func (x *UpdateFriendsReq) GetFriendUserIDs() []string {
 	return nil
 }
 
-func (x *UpdateFriendsReq) GetIsPinned() *wrapperspb.BoolValue {
+func (x *UpdateFriendsReq) GetIsPinned() *wrapperspbv1.BoolValue {
 	if x != nil {
 		return x.IsPinned
 	}
 	return nil
 }
 
-func (x *UpdateFriendsReq) GetRemark() *wrapperspb.StringValue {
+func (x *UpdateFriendsReq) GetRemark() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.Remark
 	}
 	return nil
 }
 
-func (x *UpdateFriendsReq) GetEx() *wrapperspb.StringValue {
+func (x *UpdateFriendsReq) GetEx() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.Ex
 	}
@@ -2382,8 +2382,8 @@ var file_friend_friend_proto_goTypes = []interface{}{
 	(*sdkws.FriendInfo)(nil),                  // 38: OpenIMServer.sdkws.FriendInfo
 	(*sdkws.FriendRequest)(nil),               // 39: OpenIMServer.sdkws.FriendRequest
 	(*sdkws.BlackInfo)(nil),                   // 40: OpenIMServer.sdkws.BlackInfo
-	(*wrapperspb.BoolValue)(nil),              // 41: OpenIMServer.protobuf.BoolValue
-	(*wrapperspb.StringValue)(nil),            // 42: OpenIMServer.protobuf.StringValue
+	(*wrapperspbv1.BoolValue)(nil),              // 41: OpenIMServer.protobuf.BoolValue
+	(*wrapperspbv1.StringValue)(nil),            // 42: OpenIMServer.protobuf.StringValue
 	(*sdkws.UserInfo)(nil),                    // 43: OpenIMServer.sdkws.UserInfo
 }
 var file_friend_friend_proto_depIdxs = []int32{

@@ -23,7 +23,7 @@ package group
 import (
 	context "context"
 	sdkws "github.com/yrzs/openimsdkprotocol/sdkws"
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspbv1 "github.com/yrzs/openimsdkprotocol/wrapperspbv1"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -2609,10 +2609,10 @@ type SetGroupMemberInfo struct {
 
 	GroupID   string                  `protobuf:"bytes,1,opt,name=groupID,proto3" json:"groupID"`
 	UserID    string                  `protobuf:"bytes,2,opt,name=userID,proto3" json:"userID"`
-	Nickname  *wrapperspb.StringValue `protobuf:"bytes,3,opt,name=nickname,proto3" json:"nickname"`
-	FaceURL   *wrapperspb.StringValue `protobuf:"bytes,4,opt,name=faceURL,proto3" json:"faceURL"`
-	RoleLevel *wrapperspb.Int32Value  `protobuf:"bytes,5,opt,name=roleLevel,proto3" json:"roleLevel"`
-	Ex        *wrapperspb.StringValue `protobuf:"bytes,6,opt,name=ex,proto3" json:"ex"`
+	Nickname  *wrapperspbv1.StringValue `protobuf:"bytes,3,opt,name=nickname,proto3" json:"nickname"`
+	FaceURL   *wrapperspbv1.StringValue `protobuf:"bytes,4,opt,name=faceURL,proto3" json:"faceURL"`
+	RoleLevel *wrapperspbv1.Int32Value  `protobuf:"bytes,5,opt,name=roleLevel,proto3" json:"roleLevel"`
+	Ex        *wrapperspbv1.StringValue `protobuf:"bytes,6,opt,name=ex,proto3" json:"ex"`
 }
 
 func (x *SetGroupMemberInfo) Reset() {
@@ -2661,28 +2661,28 @@ func (x *SetGroupMemberInfo) GetUserID() string {
 	return ""
 }
 
-func (x *SetGroupMemberInfo) GetNickname() *wrapperspb.StringValue {
+func (x *SetGroupMemberInfo) GetNickname() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.Nickname
 	}
 	return nil
 }
 
-func (x *SetGroupMemberInfo) GetFaceURL() *wrapperspb.StringValue {
+func (x *SetGroupMemberInfo) GetFaceURL() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.FaceURL
 	}
 	return nil
 }
 
-func (x *SetGroupMemberInfo) GetRoleLevel() *wrapperspb.Int32Value {
+func (x *SetGroupMemberInfo) GetRoleLevel() *wrapperspbv1.Int32Value {
 	if x != nil {
 		return x.RoleLevel
 	}
 	return nil
 }
 
-func (x *SetGroupMemberInfo) GetEx() *wrapperspb.StringValue {
+func (x *SetGroupMemberInfo) GetEx() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.Ex
 	}
@@ -4466,8 +4466,8 @@ var file_group_group_proto_goTypes = []interface{}{
 	(*sdkws.RequestPagination)(nil),             // 75: OpenIMServer.sdkws.RequestPagination
 	(*sdkws.GroupRequest)(nil),                  // 76: OpenIMServer.sdkws.GroupRequest
 	(*sdkws.GroupMemberFullInfo)(nil),           // 77: OpenIMServer.sdkws.GroupMemberFullInfo
-	(*wrapperspb.StringValue)(nil),              // 78: OpenIMServer.protobuf.StringValue
-	(*wrapperspb.Int32Value)(nil),               // 79: OpenIMServer.protobuf.Int32Value
+	(*wrapperspbv1.StringValue)(nil),              // 78: OpenIMServer.protobuf.StringValue
+	(*wrapperspbv1.Int32Value)(nil),               // 79: OpenIMServer.protobuf.Int32Value
 }
 var file_group_group_proto_depIdxs = []int32{
 	73, // 0: OpenIMServer.group.CreateGroupReq.groupInfo:type_name -> OpenIMServer.sdkws.GroupInfo

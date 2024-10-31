@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package wrapperspb
+package wrapperspbv1
 
 import (
 	"encoding/base64"

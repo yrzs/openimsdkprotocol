@@ -22,7 +22,7 @@ package conversation
 
 import (
 	context "context"
-	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
+	wrapperspbv1 "github.com/yrzs/openimsdkprotocol/wrapperspbv1"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -223,17 +223,17 @@ type ConversationReq struct {
 	ConversationType int32                   `protobuf:"varint,2,opt,name=conversationType,proto3" json:"conversationType"`
 	UserID           string                  `protobuf:"bytes,3,opt,name=userID,proto3" json:"userID"`
 	GroupID          string                  `protobuf:"bytes,4,opt,name=groupID,proto3" json:"groupID"`
-	RecvMsgOpt       *wrapperspb.Int32Value  `protobuf:"bytes,5,opt,name=recvMsgOpt,proto3" json:"recvMsgOpt"`
-	IsPinned         *wrapperspb.BoolValue   `protobuf:"bytes,6,opt,name=isPinned,proto3" json:"isPinned"`
-	AttachedInfo     *wrapperspb.StringValue `protobuf:"bytes,7,opt,name=attachedInfo,proto3" json:"attachedInfo"`
-	IsPrivateChat    *wrapperspb.BoolValue   `protobuf:"bytes,8,opt,name=isPrivateChat,proto3" json:"isPrivateChat"`
-	Ex               *wrapperspb.StringValue `protobuf:"bytes,9,opt,name=ex,proto3" json:"ex"`
-	BurnDuration     *wrapperspb.Int32Value  `protobuf:"bytes,10,opt,name=burnDuration,proto3" json:"burnDuration"`
-	MinSeq           *wrapperspb.Int64Value  `protobuf:"bytes,11,opt,name=minSeq,proto3" json:"minSeq"`
-	MaxSeq           *wrapperspb.Int64Value  `protobuf:"bytes,12,opt,name=maxSeq,proto3" json:"maxSeq"`
-	GroupAtType      *wrapperspb.Int32Value  `protobuf:"bytes,13,opt,name=groupAtType,proto3" json:"groupAtType"`
-	MsgDestructTime  *wrapperspb.Int64Value  `protobuf:"bytes,14,opt,name=msgDestructTime,proto3" json:"msgDestructTime"`
-	IsMsgDestruct    *wrapperspb.BoolValue   `protobuf:"bytes,15,opt,name=isMsgDestruct,proto3" json:"isMsgDestruct"`
+	RecvMsgOpt       *wrapperspbv1.Int32Value  `protobuf:"bytes,5,opt,name=recvMsgOpt,proto3" json:"recvMsgOpt"`
+	IsPinned         *wrapperspbv1.BoolValue   `protobuf:"bytes,6,opt,name=isPinned,proto3" json:"isPinned"`
+	AttachedInfo     *wrapperspbv1.StringValue `protobuf:"bytes,7,opt,name=attachedInfo,proto3" json:"attachedInfo"`
+	IsPrivateChat    *wrapperspbv1.BoolValue   `protobuf:"bytes,8,opt,name=isPrivateChat,proto3" json:"isPrivateChat"`
+	Ex               *wrapperspbv1.StringValue `protobuf:"bytes,9,opt,name=ex,proto3" json:"ex"`
+	BurnDuration     *wrapperspbv1.Int32Value  `protobuf:"bytes,10,opt,name=burnDuration,proto3" json:"burnDuration"`
+	MinSeq           *wrapperspbv1.Int64Value  `protobuf:"bytes,11,opt,name=minSeq,proto3" json:"minSeq"`
+	MaxSeq           *wrapperspbv1.Int64Value  `protobuf:"bytes,12,opt,name=maxSeq,proto3" json:"maxSeq"`
+	GroupAtType      *wrapperspbv1.Int32Value  `protobuf:"bytes,13,opt,name=groupAtType,proto3" json:"groupAtType"`
+	MsgDestructTime  *wrapperspbv1.Int64Value  `protobuf:"bytes,14,opt,name=msgDestructTime,proto3" json:"msgDestructTime"`
+	IsMsgDestruct    *wrapperspbv1.BoolValue   `protobuf:"bytes,15,opt,name=isMsgDestruct,proto3" json:"isMsgDestruct"`
 }
 
 func (x *ConversationReq) Reset() {
@@ -296,77 +296,77 @@ func (x *ConversationReq) GetGroupID() string {
 	return ""
 }
 
-func (x *ConversationReq) GetRecvMsgOpt() *wrapperspb.Int32Value {
+func (x *ConversationReq) GetRecvMsgOpt() *wrapperspbv1.Int32Value {
 	if x != nil {
 		return x.RecvMsgOpt
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetIsPinned() *wrapperspb.BoolValue {
+func (x *ConversationReq) GetIsPinned() *wrapperspbv1.BoolValue {
 	if x != nil {
 		return x.IsPinned
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetAttachedInfo() *wrapperspb.StringValue {
+func (x *ConversationReq) GetAttachedInfo() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.AttachedInfo
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetIsPrivateChat() *wrapperspb.BoolValue {
+func (x *ConversationReq) GetIsPrivateChat() *wrapperspbv1.BoolValue {
 	if x != nil {
 		return x.IsPrivateChat
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetEx() *wrapperspb.StringValue {
+func (x *ConversationReq) GetEx() *wrapperspbv1.StringValue {
 	if x != nil {
 		return x.Ex
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetBurnDuration() *wrapperspb.Int32Value {
+func (x *ConversationReq) GetBurnDuration() *wrapperspbv1.Int32Value {
 	if x != nil {
 		return x.BurnDuration
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetMinSeq() *wrapperspb.Int64Value {
+func (x *ConversationReq) GetMinSeq() *wrapperspbv1.Int64Value {
 	if x != nil {
 		return x.MinSeq
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetMaxSeq() *wrapperspb.Int64Value {
+func (x *ConversationReq) GetMaxSeq() *wrapperspbv1.Int64Value {
 	if x != nil {
 		return x.MaxSeq
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetGroupAtType() *wrapperspb.Int32Value {
+func (x *ConversationReq) GetGroupAtType() *wrapperspbv1.Int32Value {
 	if x != nil {
 		return x.GroupAtType
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetMsgDestructTime() *wrapperspb.Int64Value {
+func (x *ConversationReq) GetMsgDestructTime() *wrapperspbv1.Int64Value {
 	if x != nil {
 		return x.MsgDestructTime
 	}
 	return nil
 }
 
-func (x *ConversationReq) GetIsMsgDestruct() *wrapperspb.BoolValue {
+func (x *ConversationReq) GetIsMsgDestruct() *wrapperspbv1.BoolValue {
 	if x != nil {
 		return x.IsMsgDestruct
 	}
@@ -2019,10 +2019,10 @@ var file_conversation_conversation_proto_goTypes = []interface{}{
 	(*GetConversationsByConversationIDResp)(nil),  // 25: OpenIMServer.conversation.GetConversationsByConversationIDResp
 	(*GetConversationOfflinePushUserIDsReq)(nil),  // 26: OpenIMServer.conversation.GetConversationOfflinePushUserIDsReq
 	(*GetConversationOfflinePushUserIDsResp)(nil), // 27: OpenIMServer.conversation.GetConversationOfflinePushUserIDsResp
-	(*wrapperspb.Int32Value)(nil),                 // 28: OpenIMServer.protobuf.Int32Value
-	(*wrapperspb.BoolValue)(nil),                  // 29: OpenIMServer.protobuf.BoolValue
-	(*wrapperspb.StringValue)(nil),                // 30: OpenIMServer.protobuf.StringValue
-	(*wrapperspb.Int64Value)(nil),                 // 31: OpenIMServer.protobuf.Int64Value
+	(*wrapperspbv1.Int32Value)(nil),                 // 28: OpenIMServer.protobuf.Int32Value
+	(*wrapperspbv1.BoolValue)(nil),                  // 29: OpenIMServer.protobuf.BoolValue
+	(*wrapperspbv1.StringValue)(nil),                // 30: OpenIMServer.protobuf.StringValue
+	(*wrapperspbv1.Int64Value)(nil),                 // 31: OpenIMServer.protobuf.Int64Value
 }
 var file_conversation_conversation_proto_depIdxs = []int32{
 	28, // 0: OpenIMServer.conversation.ConversationReq.recvMsgOpt:type_name -> OpenIMServer.protobuf.Int32Value
