@@ -16,9 +16,9 @@
 // versions:
 // 	protoc-gen-go v1.29.1
 // 	protoc        v4.22.0
-// source: wrapperspbv1/wrapperspbv1.proto
+// source: wrapperspb/wrapperspb.proto
 
-package wrapperspbv1
+package wrapperspb
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -49,7 +49,7 @@ type DoubleValue struct {
 func (x *DoubleValue) Reset() {
 	*x = DoubleValue{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[0]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -62,7 +62,7 @@ func (x *DoubleValue) String() string {
 func (*DoubleValue) ProtoMessage() {}
 
 func (x *DoubleValue) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[0]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -75,7 +75,7 @@ func (x *DoubleValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleValue.ProtoReflect.Descriptor instead.
 func (*DoubleValue) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{0}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *DoubleValue) GetValue() float64 {
@@ -100,7 +100,7 @@ type FloatValue struct {
 func (x *FloatValue) Reset() {
 	*x = FloatValue{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[1]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -113,7 +113,7 @@ func (x *FloatValue) String() string {
 func (*FloatValue) ProtoMessage() {}
 
 func (x *FloatValue) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[1]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -126,7 +126,7 @@ func (x *FloatValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FloatValue.ProtoReflect.Descriptor instead.
 func (*FloatValue) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{1}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *FloatValue) GetValue() float32 {
@@ -151,7 +151,7 @@ type Int64Value struct {
 func (x *Int64Value) Reset() {
 	*x = Int64Value{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[2]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -164,7 +164,7 @@ func (x *Int64Value) String() string {
 func (*Int64Value) ProtoMessage() {}
 
 func (x *Int64Value) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[2]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -177,7 +177,7 @@ func (x *Int64Value) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64Value.ProtoReflect.Descriptor instead.
 func (*Int64Value) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{2}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Int64Value) GetValue() int64 {
@@ -202,7 +202,7 @@ type UInt64Value struct {
 func (x *UInt64Value) Reset() {
 	*x = UInt64Value{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[3]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -215,7 +215,7 @@ func (x *UInt64Value) String() string {
 func (*UInt64Value) ProtoMessage() {}
 
 func (x *UInt64Value) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[3]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -228,7 +228,7 @@ func (x *UInt64Value) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64Value.ProtoReflect.Descriptor instead.
 func (*UInt64Value) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{3}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *UInt64Value) GetValue() uint64 {
@@ -253,7 +253,7 @@ type Int32Value struct {
 func (x *Int32Value) Reset() {
 	*x = Int32Value{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[4]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -266,7 +266,7 @@ func (x *Int32Value) String() string {
 func (*Int32Value) ProtoMessage() {}
 
 func (x *Int32Value) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[4]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -279,7 +279,7 @@ func (x *Int32Value) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32Value.ProtoReflect.Descriptor instead.
 func (*Int32Value) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{4}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *Int32Value) GetValue() int32 {
@@ -304,7 +304,7 @@ type UInt32Value struct {
 func (x *UInt32Value) Reset() {
 	*x = UInt32Value{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[5]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -317,7 +317,7 @@ func (x *UInt32Value) String() string {
 func (*UInt32Value) ProtoMessage() {}
 
 func (x *UInt32Value) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[5]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -330,7 +330,7 @@ func (x *UInt32Value) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32Value.ProtoReflect.Descriptor instead.
 func (*UInt32Value) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{5}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *UInt32Value) GetValue() uint32 {
@@ -355,7 +355,7 @@ type BoolValue struct {
 func (x *BoolValue) Reset() {
 	*x = BoolValue{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[6]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -368,7 +368,7 @@ func (x *BoolValue) String() string {
 func (*BoolValue) ProtoMessage() {}
 
 func (x *BoolValue) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[6]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -381,7 +381,7 @@ func (x *BoolValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BoolValue.ProtoReflect.Descriptor instead.
 func (*BoolValue) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{6}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *BoolValue) GetValue() bool {
@@ -406,7 +406,7 @@ type StringValue struct {
 func (x *StringValue) Reset() {
 	*x = StringValue{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[7]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -419,7 +419,7 @@ func (x *StringValue) String() string {
 func (*StringValue) ProtoMessage() {}
 
 func (x *StringValue) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[7]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -432,7 +432,7 @@ func (x *StringValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StringValue.ProtoReflect.Descriptor instead.
 func (*StringValue) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{7}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *StringValue) GetValue() string {
@@ -457,7 +457,7 @@ type BytesValue struct {
 func (x *BytesValue) Reset() {
 	*x = BytesValue{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[8]
+		mi := &file_wrapperspb_wrapperspb_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -470,7 +470,7 @@ func (x *BytesValue) String() string {
 func (*BytesValue) ProtoMessage() {}
 
 func (x *BytesValue) ProtoReflect() protoreflect.Message {
-	mi := &file_wrapperspbv1_wrapperspbv1_proto_msgTypes[8]
+	mi := &file_wrapperspb_wrapperspb_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -483,7 +483,7 @@ func (x *BytesValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BytesValue.ProtoReflect.Descriptor instead.
 func (*BytesValue) Descriptor() ([]byte, []int) {
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP(), []int{8}
+	return file_wrapperspb_wrapperspb_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *BytesValue) GetValue() []byte {
@@ -493,9 +493,9 @@ func (x *BytesValue) GetValue() []byte {
 	return nil
 }
 
-var File_wrapperspbv1_wrapperspbv1_proto protoreflect.FileDescriptor
+var File_wrapperspb_wrapperspb_proto protoreflect.FileDescriptor
 
-var file_wrapperspbv1_wrapperspbv1_proto_rawDesc = []byte{
+var file_wrapperspb_wrapperspb_proto_rawDesc = []byte{
 	0x0a, 0x1b, 0x77, 0x72, 0x61, 0x70, 0x70, 0x65, 0x72, 0x73, 0x70, 0x62, 0x2f, 0x77, 0x72, 0x61,
 	0x70, 0x70, 0x65, 0x72, 0x73, 0x70, 0x62, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x15, 0x4f,
 	0x70, 0x65, 0x6e, 0x49, 0x4d, 0x53, 0x65, 0x72, 0x76, 0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74,
@@ -526,19 +526,19 @@ var file_wrapperspbv1_wrapperspbv1_proto_rawDesc = []byte{
 }
 
 var (
-	file_wrapperspbv1_wrapperspbv1_proto_rawDescOnce sync.Once
-	file_wrapperspbv1_wrapperspbv1_proto_rawDescData = file_wrapperspbv1_wrapperspbv1_proto_rawDesc
+	file_wrapperspb_wrapperspb_proto_rawDescOnce sync.Once
+	file_wrapperspb_wrapperspb_proto_rawDescData = file_wrapperspb_wrapperspb_proto_rawDesc
 )
 
-func file_wrapperspbv1_wrapperspbv1_proto_rawDescGZIP() []byte {
-	file_wrapperspbv1_wrapperspbv1_proto_rawDescOnce.Do(func() {
-		file_wrapperspbv1_wrapperspbv1_proto_rawDescData = protoimpl.X.CompressGZIP(file_wrapperspbv1_wrapperspbv1_proto_rawDescData)
+func file_wrapperspb_wrapperspb_proto_rawDescGZIP() []byte {
+	file_wrapperspb_wrapperspb_proto_rawDescOnce.Do(func() {
+		file_wrapperspb_wrapperspb_proto_rawDescData = protoimpl.X.CompressGZIP(file_wrapperspb_wrapperspb_proto_rawDescData)
 	})
-	return file_wrapperspbv1_wrapperspbv1_proto_rawDescData
+	return file_wrapperspb_wrapperspb_proto_rawDescData
 }
 
-var file_wrapperspbv1_wrapperspbv1_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
-var file_wrapperspbv1_wrapperspbv1_proto_goTypes = []interface{}{
+var file_wrapperspb_wrapperspb_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
+var file_wrapperspb_wrapperspb_proto_goTypes = []interface{}{
 	(*DoubleValue)(nil), // 0: OpenIMServer.protobuf.DoubleValue
 	(*FloatValue)(nil),  // 1: OpenIMServer.protobuf.FloatValue
 	(*Int64Value)(nil),  // 2: OpenIMServer.protobuf.Int64Value
@@ -549,7 +549,7 @@ var file_wrapperspbv1_wrapperspbv1_proto_goTypes = []interface{}{
 	(*StringValue)(nil), // 7: OpenIMServer.protobuf.StringValue
 	(*BytesValue)(nil),  // 8: OpenIMServer.protobuf.BytesValue
 }
-var file_wrapperspbv1_wrapperspbv1_proto_depIdxs = []int32{
+var file_wrapperspb_wrapperspb_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -557,13 +557,13 @@ var file_wrapperspbv1_wrapperspbv1_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_wrapperspbv1_wrapperspbv1_proto_init() }
-func file_wrapperspbv1_wrapperspbv1_proto_init() {
-	if File_wrapperspbv1_wrapperspbv1_proto != nil {
+func init() { file_wrapperspb_wrapperspb_proto_init() }
+func file_wrapperspb_wrapperspb_proto_init() {
+	if File_wrapperspb_wrapperspb_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DoubleValue); i {
 			case 0:
 				return &v.state
@@ -575,7 +575,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FloatValue); i {
 			case 0:
 				return &v.state
@@ -587,7 +587,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Int64Value); i {
 			case 0:
 				return &v.state
@@ -599,7 +599,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UInt64Value); i {
 			case 0:
 				return &v.state
@@ -611,7 +611,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Int32Value); i {
 			case 0:
 				return &v.state
@@ -623,7 +623,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UInt32Value); i {
 			case 0:
 				return &v.state
@@ -635,7 +635,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BoolValue); i {
 			case 0:
 				return &v.state
@@ -647,7 +647,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*StringValue); i {
 			case 0:
 				return &v.state
@@ -659,7 +659,7 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 				return nil
 			}
 		}
-		file_wrapperspbv1_wrapperspbv1_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_wrapperspb_wrapperspb_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BytesValue); i {
 			case 0:
 				return &v.state
@@ -676,18 +676,18 @@ func file_wrapperspbv1_wrapperspbv1_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_wrapperspbv1_wrapperspbv1_proto_rawDesc,
+			RawDescriptor: file_wrapperspb_wrapperspb_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   9,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_wrapperspbv1_wrapperspbv1_proto_goTypes,
-		DependencyIndexes: file_wrapperspbv1_wrapperspbv1_proto_depIdxs,
-		MessageInfos:      file_wrapperspbv1_wrapperspbv1_proto_msgTypes,
+		GoTypes:           file_wrapperspb_wrapperspb_proto_goTypes,
+		DependencyIndexes: file_wrapperspb_wrapperspb_proto_depIdxs,
+		MessageInfos:      file_wrapperspb_wrapperspb_proto_msgTypes,
 	}.Build()
-	File_wrapperspbv1_wrapperspbv1_proto = out.File
-	file_wrapperspbv1_wrapperspbv1_proto_rawDesc = nil
-	file_wrapperspbv1_wrapperspbv1_proto_goTypes = nil
-	file_wrapperspbv1_wrapperspbv1_proto_depIdxs = nil
+	File_wrapperspb_wrapperspb_proto = out.File
+	file_wrapperspb_wrapperspb_proto_rawDesc = nil
+	file_wrapperspb_wrapperspb_proto_goTypes = nil
+	file_wrapperspb_wrapperspb_proto_depIdxs = nil
 }

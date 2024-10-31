@@ -9,7 +9,7 @@ package rtc
 import (
 	context "context"
 	sdkws "github.com/yrzs/openimsdkprotocol/sdkws"
-	_ "github.com/yrzs/openimsdkprotocol/wrapperspbv1"
+	_ "github.com/yrzs/openimsdkprotocol/wrapperspb"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

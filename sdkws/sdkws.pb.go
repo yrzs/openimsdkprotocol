@@ -21,7 +21,7 @@
 package sdkws
 
 import (
-	wrapperspbv1 "github.com/yrzs/openimsdkprotocol/wrapperspbv1"
+	wrapperspb "github.com/yrzs/openimsdkprotocol/wrapperspb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -267,10 +267,10 @@ type GroupInfoForSet struct {
 	Notification      string                  `protobuf:"bytes,3,opt,name=notification,proto3" json:"notification"`
 	Introduction      string                  `protobuf:"bytes,4,opt,name=introduction,proto3" json:"introduction"`
 	FaceURL           string                  `protobuf:"bytes,5,opt,name=faceURL,proto3" json:"faceURL"`
-	Ex                *wrapperspbv1.StringValue `protobuf:"bytes,6,opt,name=ex,proto3" json:"ex"`
-	NeedVerification  *wrapperspbv1.Int32Value  `protobuf:"bytes,7,opt,name=needVerification,proto3" json:"needVerification"`
-	LookMemberInfo    *wrapperspbv1.Int32Value  `protobuf:"bytes,8,opt,name=lookMemberInfo,proto3" json:"lookMemberInfo"`
-	ApplyMemberFriend *wrapperspbv1.Int32Value  `protobuf:"bytes,9,opt,name=applyMemberFriend,proto3" json:"applyMemberFriend"`
+	Ex                *wrapperspb.StringValue `protobuf:"bytes,6,opt,name=ex,proto3" json:"ex"`
+	NeedVerification  *wrapperspb.Int32Value  `protobuf:"bytes,7,opt,name=needVerification,proto3" json:"needVerification"`
+	LookMemberInfo    *wrapperspb.Int32Value  `protobuf:"bytes,8,opt,name=lookMemberInfo,proto3" json:"lookMemberInfo"`
+	ApplyMemberFriend *wrapperspb.Int32Value  `protobuf:"bytes,9,opt,name=applyMemberFriend,proto3" json:"applyMemberFriend"`
 }
 
 func (x *GroupInfoForSet) Reset() {
@@ -340,28 +340,28 @@ func (x *GroupInfoForSet) GetFaceURL() string {
 	return ""
 }
 
-func (x *GroupInfoForSet) GetEx() *wrapperspbv1.StringValue {
+func (x *GroupInfoForSet) GetEx() *wrapperspb.StringValue {
 	if x != nil {
 		return x.Ex
 	}
 	return nil
 }
 
-func (x *GroupInfoForSet) GetNeedVerification() *wrapperspbv1.Int32Value {
+func (x *GroupInfoForSet) GetNeedVerification() *wrapperspb.Int32Value {
 	if x != nil {
 		return x.NeedVerification
 	}
 	return nil
 }
 
-func (x *GroupInfoForSet) GetLookMemberInfo() *wrapperspbv1.Int32Value {
+func (x *GroupInfoForSet) GetLookMemberInfo() *wrapperspb.Int32Value {
 	if x != nil {
 		return x.LookMemberInfo
 	}
 	return nil
 }
 
-func (x *GroupInfoForSet) GetApplyMemberFriend() *wrapperspbv1.Int32Value {
+func (x *GroupInfoForSet) GetApplyMemberFriend() *wrapperspb.Int32Value {
 	if x != nil {
 		return x.ApplyMemberFriend
 	}
@@ -677,7 +677,7 @@ type UserInfoWithEx struct {
 	UserID           string                  `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID"`
 	Nickname         string                  `protobuf:"bytes,2,opt,name=nickname,proto3" json:"nickname"`
 	FaceURL          string                  `protobuf:"bytes,3,opt,name=faceURL,proto3" json:"faceURL"`
-	Ex               *wrapperspbv1.StringValue `protobuf:"bytes,4,opt,name=ex,proto3" json:"ex"`
+	Ex               *wrapperspb.StringValue `protobuf:"bytes,4,opt,name=ex,proto3" json:"ex"`
 	GlobalRecvMsgOpt int32                   `protobuf:"varint,7,opt,name=globalRecvMsgOpt,proto3" json:"globalRecvMsgOpt"`
 }
 
@@ -734,7 +734,7 @@ func (x *UserInfoWithEx) GetFaceURL() string {
 	return ""
 }
 
-func (x *UserInfoWithEx) GetEx() *wrapperspbv1.StringValue {
+func (x *UserInfoWithEx) GetEx() *wrapperspb.StringValue {
 	if x != nil {
 		return x.Ex
 	}
@@ -5897,8 +5897,8 @@ var file_sdkws_sdkws_proto_goTypes = []interface{}{
 	nil,                                   // 72: OpenIMServer.sdkws.MsgData.OptionsEntry
 	nil,                                   // 73: OpenIMServer.sdkws.PushMessages.MsgsEntry
 	nil,                                   // 74: OpenIMServer.sdkws.PushMessages.NotificationMsgsEntry
-	(*wrapperspbv1.StringValue)(nil),        // 75: OpenIMServer.protobuf.StringValue
-	(*wrapperspbv1.Int32Value)(nil),         // 76: OpenIMServer.protobuf.Int32Value
+	(*wrapperspb.StringValue)(nil),        // 75: OpenIMServer.protobuf.StringValue
+	(*wrapperspb.Int32Value)(nil),         // 76: OpenIMServer.protobuf.Int32Value
 }
 var file_sdkws_sdkws_proto_depIdxs = []int32{
 	75, // 0: OpenIMServer.sdkws.GroupInfoForSet.ex:type_name -> OpenIMServer.protobuf.StringValue
